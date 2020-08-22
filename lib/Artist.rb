@@ -36,6 +36,12 @@ class Artist
         end 
     end 
 
+    # def add_song(song)
+    #     song.artist = self unless song.artist
+    #     songs << song unless songs.include?(song)
+    #   end
+    
+
     def genres 
        @songs.collect {|song| song.genre}.uniq       
     end 
